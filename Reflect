@@ -1,0 +1,12 @@
+Java 的反射机制
+获取Class类的三种方法：
+  I.    类名.class
+  II.   对象名.gelClass()
+  III.  Class.forName("要加载的类名")
+
+配置文件的加载
+类名.class.getResourceAsStream(str)
+str 在这里代表的是 想加载的配置文件的路径
+路径的写法有两种：
+I.  str = "config.properties" ->相对路径
+II. str = "/org/config.properties" ->从classpath的根路径查找
